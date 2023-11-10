@@ -106,16 +106,13 @@
 										First, I checked columns that have qualitative data to see what are the 
 										different types of bikes (rideable_type) that are offered. Using a "SELECT DISTINCT" query
 										for bike type, there were 3 labels that showed: electric, classic, and docked. 
-										Docked bikes are bikes left in the docking station, so it's not trip data or even a bike type. I
-										determined this data was not helpful to answer the business task, therefor it's excluded
-										from the analysis.
-										For the member data, there were 2 types: member and casual. That is what was expected.
+										For the member data, there were 2 types: member and casual, which is what was expected.
 									</p>
 									<p>
 										Next, I performed a calculation with the start and end dates. For each trip, I
-										calculated the length of time (end date and time - start date and time). I used the start date
-										to extract the month and year, and the day of the week of the trip. I also output the minimum and maximum
-										length of time.
+										calculated the length of time (end date and time - start date and time). I also used the start date
+										to extract the month and year, and the day of the week of the trip. In addition, I output the 
+										minimum and maximum length of time.
 										Here is a sample of the query I used.
 										<div>
 											SELECT<br>
@@ -168,8 +165,9 @@
 											</li>
 											<li>The colder months see a drop in trips, which is expected.</li>
 											<li>Casual riders have a slight preference for electric over classic bikes, and 
-												members are split nearly even between the 2 bike types.
+												members are split nearly even between electric and classic bike types.
 											</li>
+											<li>Only casual riders use the docked bike type.</li>
 										</ul>
 									</p>
 									<p>
@@ -188,10 +186,9 @@
 									<h3>Recommendations</h3>
 									<p>
 										<ol>
-											<li>Target marketing campaign in spring, summer and fall months (Apr to Oct), when the amount of trips are high.</li>
+											<li>Target the marketing campaign in spring, summer and fall months (Apr to Oct), when the amount of trips are high.</li>
 											<li>Create monthly memberships for high use months.</li>
 											<li>Create weekend passes or memberships to capitalize on casual riders preference for weekends.</li>
-											<li>Charge more for casual riders due to longer ride lengths. This could push them to convert to a member.</li>
 										</ol>
 									</p>
 									<p>
@@ -202,6 +199,10 @@
 									<p>
 										I would like to survey casual riders to get more insights into the reason they rent bikes so we
 										can create a more targeted and specific marketing campaign.
+									</p>
+									<p>
+										I would also like to look into the reason docked bikes are only used by casual riders. This could be
+										a key point to use in getting users to switch to a membership.
 									</p>
 								</div>
 							</section>
